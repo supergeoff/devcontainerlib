@@ -1,0 +1,42 @@
+// Name of the development environment (displayed in VS Code and Codespaces)
+{
+  "name": "Universal Development Environment",
+
+  // Base Docker image used for the development environment
+  "image": "mcr.microsoft.com/devcontainers/universal",
+
+  // Additional features to include in the container via Dev Containers
+  "features": {
+    // Installs common utilities like curl, wget, and git and update machine
+    "ghcr.io/devcontainers/features/common-utils:latest": {}
+  },
+
+  // Tool and extension-specific customizations
+  "customizations": {
+    // VS Code-specific configuration
+    "vscode": {
+      // List of VS Code extensions automatically installed in the environment
+      "extensions": [
+        "alexanderbast.vscode-snazzy", // Snazzy color theme
+        "loilo.snazzy-light", // Snazzy Light color theme
+        "helgardrichard.helium-icon-theme", // Helium icon theme
+        "esbenp.prettier-vscode", // Prettier for code formatting
+        "github.vscode-github-actions", // Extension for GitHub Actions
+        "donjayamanne.githistory", // Git History extension
+        "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
+        "wayou.vscode-todo-highlight" // Highlights TODO comments
+      ],
+      // Default settings for VS Code in this environment
+      "settings": {
+        // Sets Prettier as the default formatter
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        // Enables format on save
+        "editor.formatOnSave": true,
+        // Applies the Material Design icon theme
+        "workbench.iconTheme": "helium-icon-theme",
+        // Applies the Material Design color theme for the UI
+        "workbench.colorTheme": "Snazzy Light"
+      }
+    }
+  }
+}
