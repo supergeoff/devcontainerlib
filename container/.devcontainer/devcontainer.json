@@ -21,6 +21,8 @@
         "ms-azuretools.vscode-docker",    // Docker UI management
         "mads-hartmann.bash-ide-vscode",    // Bash auto-completion
         "esbenp.prettier-vscode", // Prettier for code formatting
+        "donjayamanne.githistory", // Git History extension
+        "ivanhofer.git-assistant", // Git Submodules extension
         "alexanderbast.vscode-snazzy", // Snazzy color theme
         "loilo.snazzy-light", // Snazzy Light color theme
         "helgardrichard.helium-icon-theme" // Helium icon theme

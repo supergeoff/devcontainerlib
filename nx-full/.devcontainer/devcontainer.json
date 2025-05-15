@@ -37,6 +37,7 @@
         "esbenp.prettier-vscode", // Prettier for code formatting
         "github.vscode-github-actions", // Extension for GitHub Actions
         "donjayamanne.githistory", // Git History extension
+        "ivanhofer.git-assistant", // Git Submodules extension
         "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
         "wayou.vscode-todo-highlight", // Highlights TODO comments
 
