@@ -1,0 +1,81 @@
+// Name of the development environment (displayed in VS Code and Codespaces)
+{
+  "name": "NX Monorepo TS (Nx + Node + TypeScript)",
+
+  // Base Docker image used for the development environment
+  "image": "mcr.microsoft.com/devcontainers/typescript-node",
+
+  // Additional features to include in the container via Dev Containers
+  "features": {
+    // Installs common utilities like curl, wget, and git and update machine
+    "ghcr.io/devcontainers/features/common-utils:latest": {},
+    // Allows running Docker inside the container (Docker-in-Docker)
+    "ghcr.io/devcontainers/features/docker-in-docker:latest": {},
+    // Installs the PNPM package manager globally
+    "ghcr.io/devcontainers-extra/features/npm-packages:latest": {
+      "packages": "nx"
+    },
+    // Installs the GitHub CLI to interact with GitHub from the command line
+    "ghcr.io/devcontainers/features/github-cli:latest": {},
+    // Installs the Pulumi CLI for infrastructure-as-code
+    "ghcr.io/devcontainers-extra/features/pulumi:latest": {},
+    // Installs the Google Cloud CLI to interact with Google Cloud services
+    "ghcr.io/supergeoff/features/google-cli:latest": {},
+    // Installs Playwright for end-to-end testing and browser dependency
+    "ghcr.io/supergeoff/features/playwright:latest": {}
+  },
+
+  // Tool and extension-specific customizations
+  "customizations": {
+    // VS Code-specific configuration
+    "vscode": {
+      // List of VS Code extensions automatically installed in the environment
+      "extensions": [
+        "alexanderbast.vscode-snazzy", // Snazzy color theme
+        "loilo.snazzy-light", // Snazzy Light color theme
+        "helgardrichard.helium-icon-theme", // Helium icon theme
+        "esbenp.prettier-vscode", // Prettier for code formatting
+        "github.vscode-github-actions", // Extension for GitHub Actions
+        "donjayamanne.githistory", // Git History extension
+        "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
+        "wayou.vscode-todo-highlight", // Highlights TODO comments
+
+        "pnpm.vscode-pnpm", // PNPM extension for package management
+        "dbaeumer.vscode-eslint", // ESLint for code linting
+        "nrwl.angular-console", // Nx Console for monorepo projects (Angular/Nx)
+        "firsttris.vscode-jest-runner", // Jest test runner for VS Code
+        "bradlc.vscode-tailwindcss", // Tailwind CSS support
+        "saoudrizwan.claude-dev", // Claude AI extension for AI assistance
+        "dotenv.dotenv-vscode", // Environment variable manager
+        "graphql.vscode-graphql", // GraphQL support
+        "pulumi.pulumi", // Pulumi extension for infrastructure-as-code
+        "postman.postman-for-vscode", // Postman extension for API requests
+        "ms-playwright.playwright", // Playwright for end-to-end testing
+        "-googlecloudtools.cloudcode" // Remove Google Cloud (GCP) tools for VS Code
+      ],
+      // Default settings for VS Code in this environment
+      "settings": {
+        // Sets Prettier as the default formatter
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        // Enables format on save
+        "editor.formatOnSave": true,
+        // Applies the Material Design icon theme
+        "workbench.iconTheme": "helium-icon-theme",
+        // Applies the Material Design color theme for the UI
+        "workbench.colorTheme": "Snazzy Light"
+      }
+    }
+  },
+
+  // Configuration of exposed ports for applications in the container
+  // "forwardPorts": [
+  // ],
+
+  // Sets the non-root user used to connect to the container
+  "remoteUser": "node"
+
+  // Post-creation or post-start commands (none defined for now)
+  // "postCreateCommand": No command defined before startup
+  // Automatically moves memory-bank.md to the user's Rules folder on container startup
+  // "postStartCommand": No command defined after startup
+}

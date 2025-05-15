@@ -1,6 +1,6 @@
 // Name of the development environment (displayed in VS Code and Codespaces)
 {
-  "name": "Monorepo TS (Nx + Node + TypeScript)",
+  "name": "NX Monorepo TS (Nx + Node + TypeScript)",
 
   // Base Docker image used for the development environment
   "image": "mcr.microsoft.com/devcontainers/typescript-node",
@@ -9,21 +9,12 @@
   "features": {
     // Installs common utilities like curl, wget, and git and update machine
     "ghcr.io/devcontainers/features/common-utils:latest": {},
-    // Allows running Docker inside the container (Docker-in-Docker)
-    // "ghcr.io/devcontainers/features/docker-in-docker:latest": {},
-    "ghcr.io/devcontainers/features/node:latest": {},
     // Installs the PNPM package manager globally
     "ghcr.io/devcontainers-extra/features/npm-packages:latest": {
       "packages": "nx"
     },
     // Installs the GitHub CLI to interact with GitHub from the command line
-    "ghcr.io/devcontainers/features/github-cli:latest": {},
-    // Installs the Pulumi CLI for infrastructure-as-code
-    // "ghcr.io/devcontainers-extra/features/pulumi:latest": {},
-    // Installs the Google Cloud CLI to interact with Google Cloud services
-    // "ghcr.io/supergeoff/features/google-cli:latest": {}
-    // Installs Playwright for end-to-end testing and browser dependency
-    "ghcr.io/supergeoff/features/playwright:latest": {}
+    "ghcr.io/devcontainers/features/github-cli:latest": {}
   },
 
   // Tool and extension-specific customizations
@@ -46,13 +37,7 @@
         "nrwl.angular-console", // Nx Console for monorepo projects (Angular/Nx)
         "firsttris.vscode-jest-runner", // Jest test runner for VS Code
         "bradlc.vscode-tailwindcss", // Tailwind CSS support
-        // "saoudrizwan.claude-dev", // Claude AI extension for AI assistance
-        // "dotenv.dotenv-vscode", // Environment variable manager
-        // "graphql.vscode-graphql", // GraphQL support
-        // "pulumi.pulumi", // Pulumi extension for infrastructure-as-code
-        // "postman.postman-for-vscode", // Postman extension for API requests
-        // "ms-playwright.playwright", // Playwright for end-to-end testing
-        "-googlecloudtools.cloudcode" // Remove Google Cloud (GCP) tools for VS Code
+        "saoudrizwan.claude-dev" // Claude AI extension for AI assistance
       ],
       // Default settings for VS Code in this environment
       "settings": {
@@ -78,5 +63,5 @@
   // Post-creation or post-start commands (none defined for now)
   // "postCreateCommand": No command defined before startup
   // Automatically moves memory-bank.md to the user's Rules folder on container startup
-  // "postStartCommand": "if [ -f .clinerules/_memory-bank.md ]; then mkdir -p ~/Documents/Cline/Rules && cp -f .clinerules/_memory-bank.md ~/Documents/Cline/Rules/memory-bank.md; fi"
+  // "postStartCommand": No command defined after startup
 }
