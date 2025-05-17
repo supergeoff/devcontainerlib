@@ -23,9 +23,9 @@
     "vscode": {
       // List of VS Code extensions automatically installed in the environment
       "extensions": [
-        "alexanderbast.vscode-snazzy", // Snazzy color theme
-        "loilo.snazzy-light", // Snazzy Light color theme
-        "helgardrichard.helium-icon-theme", // Helium icon theme
+        "tinaciousdesign.theme-tinaciousdesign", // Tinacious color theme
+        "thang-nm.flow-icons", // Flow icon theme
+        
         "esbenp.prettier-vscode", // Prettier for code formatting
         "github.vscode-github-actions", // Extension for GitHub Actions
         "donjayamanne.githistory", // Git History extension
@@ -46,10 +46,504 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         // Enables format on save
         "editor.formatOnSave": true,
-        // Applies the Material Design icon theme
-        "workbench.iconTheme": "helium-icon-theme",
-        // Applies the Material Design color theme for the UI
-        "workbench.colorTheme": "Snazzy Light"
+        "workbench.colorTheme": "Tinacious Design (Light)",
+        "workbench.iconTheme": "flow-dim",
+        "workbench.colorCustomizations": {
+          "[Tinacious Design (Light)]": {
+            "activityBar.background": "#e7e8e6",
+            "activityBar.inactiveForeground": "#68696888",
+            "badge.foreground": "#ffffff",
+            "debugToolBar.border": "#e9eaeb",
+            "dropdown.border": "#e9eaeb",
+            "editor.background": "#fafbfc",
+            "editor.foreground": "#565869",
+            "editor.selectionBackground": "#2dae5822",
+            "editor.snippetTabstopHighlightBackground": "#adb1c23a",
+            "editor.wordHighlightBackground": "#adb1c23a",
+            "editorGroup.emptyBackground": "#f3f4f5",
+            "editorInlayHint.background": "#e9eaeb",
+            "editorInlayHint.foreground": "#565869",
+            "editorLineNumber.foreground": "#9194a2aa",
+            "editorOverviewRuler.wordHighlightForeground": "#adb1c288",
+            "editorWhitespace.foreground": "#adb1c255",
+            "foreground": "#686968",
+            "input.border": "#e9eaeb",
+            "list.activeSelectionForeground": "#ffffff",
+            "list.focusForeground": "#11658f",
+            "list.hoverBackground": "#e9eaeb",
+            "list.inactiveSelectionBackground": "#89b5cb33",
+            "menu.background": "#fafbfc",
+            "menu.selectionBackground": "#e9eaeb",
+            "menu.selectionForeground": "#686968",
+            "menubar.selectionBackground": "#e9eaeb",
+            "menubar.selectionForeground": "#686968",
+            "peekViewEditor.background": "#14b1ff08",
+            "peekViewEditorStickyScroll.background": "#edf4fb",
+            "peekViewResult.selectionForeground": "#ffffff",
+            "sideBar.background": "#f3f4f5",
+            "sideBar.border": "#dedfe0",
+            "sideBarSectionHeader.background": "#e9eaeb",
+            "sideBarSectionHeader.border": "#dedfe0",
+            "titleBar.activeBackground": "#f3f4f5",
+            "scrollbarSlider.background":"#3e3e3e3e",
+          },
+        },
+        "editor.tokenColorCustomizations": {
+          "[*Light*]": {
+            "textMateRules": [
+              {
+                "scope": "ref.matchtext",
+                "settings": {
+                  "foreground": "#000"
+                }
+              }
+            ]
+          },
+          "[*Dark*]": {
+            "textMateRules": [
+              {
+                "scope": "ref.matchtext",
+                "settings": {
+                  "foreground": "#fff"
+                }
+              }
+            ]
+          },
+          "textMateRules": [
+            {
+              "scope": "comment",
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": "keyword",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "bitwise-operator",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "storage",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "storage.type",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "entity.name.function",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "invalid, invalid.illegal, invalid.deprecated",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "entity.name.filename.find-in-files",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta.diff.header",
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": "meta.diff.header punctuation.definition.from-file.diff",
+              "settings": {
+                "fontStyle": "italic bold"
+              }
+            },
+            {
+              "scope": "meta.diff.header punctuation.definition.to-file.diff",
+              "settings": {
+                "fontStyle": "italic bold"
+              }
+            },
+            {
+              "scope": "meta.diff.range",
+              "settings": {
+                "fontStyle": "italic bold"
+              }
+            },
+            {
+              "scope": "markup.deleted punctuation.definition.inserted",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "markup.inserted punctuation.definition.inserted",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "source.js entity.name.function",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "source.js meta.function entity.name.function, source.js entity.name.function meta.function",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "meta.structure.dictionary.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
+              "settings": {
+                "fontStyle": "regular"
+              }
+            },
+            {
+              "scope": "source.python keyword",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "source.python storage",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "source.python storage.type",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "source.python entity.name.function",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "source.php entity.name.type.class",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "entity.name.type.module.ruby",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "entity.name.type.class.ruby",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "entity.other.inherited-class.ruby",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "text.html.markdown markup.heading",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "text.html.markdown markup.underline.link, text.html.markdown constant.other.reference",
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": "text.html.markdown markup.bold",
+              "settings": {
+                "fontStyle": "bold"
+              }
+            },
+            {
+              "scope": "text.html.markdown markup.italic",
+              "settings": {
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "scope": "text.html.markdown markup.bold markup.italic",
+              "settings": {
+                "fontStyle": "bold italic"
+              }
+            },
+            {
+              "scope": "text.html.markdown markup.italic markup.bold",
+              "settings": {
+                "fontStyle": "italic bold"
+              }
+            }
+          ]
+        }
       }
     }
   },
