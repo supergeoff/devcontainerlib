@@ -56,7 +56,6 @@
             "foreground": "#686968",
             "input.border": "#e9eaeb",
             "list.activeSelectionForeground": "#ffffff",
-            "list.focusForeground": "#11658f",
             "list.hoverBackground": "#e9eaeb",
             "list.inactiveSelectionBackground": "#89b5cb33",
             "menu.background": "#fafbfc",
