@@ -30,10 +30,10 @@
         "mads-hartmann.bash-ide-vscode"   // Bash auto-completion
       ],
       "settings": {
-        // Sets Prettier as the default formatter
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        // Sets the default formatter
         // Enables format on save
         "editor.formatOnSave": true,
+        // Style & Theme
         "workbench.colorTheme": "Tinacious Design (Light)",
         "workbench.iconTheme": "flow-dim",
         "workbench.colorCustomizations": {

@@ -41,10 +41,11 @@
       ],
       // Default settings for VS Code in this environment
       "settings": {
-        // Sets Prettier as the default formatter
+        // Sets the default formatter
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         // Enables format on save
         "editor.formatOnSave": true,
+        // Style & Theme
         "workbench.colorTheme": "Tinacious Design (Light)",
         "workbench.iconTheme": "flow-dim",
         "workbench.colorCustomizations": {
