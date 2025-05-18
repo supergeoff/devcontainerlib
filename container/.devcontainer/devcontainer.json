@@ -1,16 +1,13 @@
 {
   // Name of the development container (appears in VS Code)
   "name": "Devcontainer Feature Development Environment",
-
   // Selected base image (Debian, prepared for devcontainers)
   "image": "ghcr.io/devcontainers-extra/features/prebuilt-devcontainer",
-
   // Definition of features to install
   "features": {
     // Installs common utilities like curl, wget, and git and update machine
     "ghcr.io/devcontainers/features/common-utils:latest": {}
   },
-
   // VS Code environment customization
   "customizations": {
     "vscode": {
@@ -18,11 +15,9 @@
       "extensions": [
         "tinaciousdesign.theme-tinaciousdesign", // Tinacious color theme
         "thang-nm.flow-icons", // Flow icon theme
-
         "donjayamanne.githistory", // Git History extension
         "wayou.vscode-todo-highlight", // Highlights TODO comments
-
-        "mads-hartmann.bash-ide-vscode",   // Bash auto-completion
+        "mads-hartmann.bash-ide-vscode", // Bash auto-completion
         "ms-vscode-remote.remote-containers", // Remote containers
         "ms-python.python", // Python
         "ms-python.vscode-pylance", // Pylance
@@ -73,7 +68,7 @@
             "sideBarSectionHeader.background": "#e9eaeb",
             "sideBarSectionHeader.border": "#dedfe0",
             "titleBar.activeBackground": "#f3f4f5",
-            "scrollbarSlider.background":"#3e3e3e3e",
+            "scrollbarSlider.background": "#3e3e3e3e",
           },
         },
         "editor.tokenColorCustomizations": {
