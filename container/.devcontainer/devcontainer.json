@@ -13,10 +13,13 @@
     "vscode": {
       // List of VS Code extensions to automatically install in the container
       "extensions": [
+        // Visual
         "tinaciousdesign.theme-tinaciousdesign", // Tinacious color theme
         "thang-nm.flow-icons", // Flow icon theme
+        // Overall
         "donjayamanne.githistory", // Git History extension
         "wayou.vscode-todo-highlight", // Highlights TODO comments
+        // Specific
         "mads-hartmann.bash-ide-vscode", // Bash auto-completion
         "ms-vscode-remote.remote-containers", // Remote containers
         "ms-python.python", // Python
@@ -68,8 +71,8 @@
             "sideBarSectionHeader.background": "#e9eaeb",
             "sideBarSectionHeader.border": "#dedfe0",
             "titleBar.activeBackground": "#f3f4f5",
-            "scrollbarSlider.background": "#3e3e3e3e",
-          },
+            "scrollbarSlider.background": "#3e3e3e3e"
+          }
         },
         "editor.tokenColorCustomizations": {
           "[*Light*]": {
@@ -180,7 +183,7 @@
             {
               "scope": "source.js entity.name.function",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -198,7 +201,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -210,7 +213,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -222,7 +225,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -234,7 +237,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -246,7 +249,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -258,7 +261,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -270,7 +273,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -282,7 +285,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -294,7 +297,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -306,7 +309,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -318,7 +321,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -330,7 +333,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -342,7 +345,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -354,7 +357,7 @@
             {
               "scope": "meta meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -366,7 +369,7 @@
             {
               "scope": "meta meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -378,7 +381,7 @@
             {
               "scope": "meta meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -390,7 +393,7 @@
             {
               "scope": "meta meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -402,7 +405,7 @@
             {
               "scope": "meta meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -414,7 +417,7 @@
             {
               "scope": "meta meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -426,7 +429,7 @@
             {
               "scope": "meta meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
@@ -438,7 +441,7 @@
             {
               "scope": "meta.structure.dictionary.json meta.structure.dictionary.value.json string.quoted.double.json",
               "settings": {
-                "fontStyle": "regular"
+                "fontStyle": ""
               }
             },
             {
