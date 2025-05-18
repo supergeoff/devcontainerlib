@@ -7,6 +7,8 @@
 
   // Definition of features to install
   "features": {
+    // Installs common utilities like curl, wget, and git and update machine
+    "ghcr.io/devcontainers/features/common-utils:latest": {},
     // Feature to configure Docker access
     "ghcr.io/devcontainers/features/docker-in-docker:latest": {},
     // Feature to install the devcontainer CLI itself
@@ -21,11 +23,11 @@
         "tinaciousdesign.theme-tinaciousdesign", // Tinacious color theme
         "thang-nm.flow-icons", // Flow icon theme
 
-        "ms-azuretools.vscode-docker",    // Docker UI management
-        "mads-hartmann.bash-ide-vscode",    // Bash auto-completion
-        "esbenp.prettier-vscode", // Prettier for code formatting
         "donjayamanne.githistory", // Git History extension
-        "ivanhofer.git-assistant", // Git Submodules extension
+        "wayou.vscode-todo-highlight", // Highlights TODO comments
+
+        "ms-azuretools.vscode-docker",    // Docker UI management
+        "mads-hartmann.bash-ide-vscode"   // Bash auto-completion
       ],
       "settings": {
         // Sets Prettier as the default formatter

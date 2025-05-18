@@ -34,14 +34,13 @@
         "tinaciousdesign.theme-tinaciousdesign", // Tinacious color theme
         "thang-nm.flow-icons", // Flow icon theme
         
-        "esbenp.prettier-vscode", // Prettier for code formatting
         "github.vscode-github-actions", // Extension for GitHub Actions
         "donjayamanne.githistory", // Git History extension
-        "ivanhofer.git-assistant", // Git Submodules extension
-        "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
         "wayou.vscode-todo-highlight", // Highlights TODO comments
+        "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
 
         "pnpm.vscode-pnpm", // PNPM extension for package management
+        "esbenp.prettier-vscode", // Prettier for code formatting
         "dbaeumer.vscode-eslint", // ESLint for code linting
         "nrwl.angular-console", // Nx Console for monorepo projects (Angular/Nx)
         "firsttris.vscode-jest-runner", // Jest test runner for VS Code

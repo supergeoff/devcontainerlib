@@ -1,20 +1,14 @@
 // Name of the development environment (displayed in VS Code and Codespaces)
 {
-  "name": "NX Monorepo TS (Nx + Node + TypeScript)",
+  "name": "Go Monorepo",
 
   // Base Docker image used for the development environment
-  "image": "mcr.microsoft.com/devcontainers/typescript-node",
+  "image": "mcr.microsoft.com/devcontainers/go",
 
   // Additional features to include in the container via Dev Containers
   "features": {
     // Installs common utilities like curl, wget, and git and update machine
-    "ghcr.io/devcontainers/features/common-utils:latest": {},
-    // Installs the PNPM package manager globally
-    "ghcr.io/devcontainers-extra/features/npm-packages:latest": {
-      "packages": "nx"
-    },
-    // Installs the GitHub CLI to interact with GitHub from the command line
-    "ghcr.io/devcontainers/features/github-cli:latest": {}
+    "ghcr.io/devcontainers/features/common-utils:latest": {}
   },
 
   // Tool and extension-specific customizations
@@ -28,16 +22,13 @@
         
         "github.vscode-github-actions", // Extension for GitHub Actions
         "donjayamanne.githistory", // Git History extension
+
         "wayou.vscode-todo-highlight", // Highlights TODO comments
         "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
 
-        "pnpm.vscode-pnpm", // PNPM extension for package management
-        "esbenp.prettier-vscode", // Prettier for code formatting
-        "dbaeumer.vscode-eslint", // ESLint for code linting
-        "nrwl.angular-console", // Nx Console for monorepo projects (Angular/Nx)
-        "firsttris.vscode-jest-runner", // Jest test runner for VS Code
-        "bradlc.vscode-tailwindcss", // Tailwind CSS support
-        "saoudrizwan.claude-dev" // Claude AI extension for AI assistance
+        "golang.go", // Go language support
+        "premparihar.gotestexplorer", // Go test explorer
+        "jinliming2.vscode-go-template" // Go Template support
       ],
       // Default settings for VS Code in this environment
       "settings": {
@@ -544,17 +535,5 @@
         }
       }
     }
-  },
-
-  // Configuration of exposed ports for applications in the container
-  // "forwardPorts": [
-  // ],
-
-  // Sets the non-root user used to connect to the container
-  "remoteUser": "node"
-
-  // Post-creation or post-start commands (none defined for now)
-  // "postCreateCommand": No command defined before startup
-  // Automatically moves memory-bank.md to the user's Rules folder on container startup
-  // "postStartCommand": No command defined after startup
+  }
 }

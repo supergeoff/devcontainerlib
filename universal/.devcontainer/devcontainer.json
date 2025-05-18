@@ -20,12 +20,10 @@
         "tinaciousdesign.theme-tinaciousdesign", // Tinacious color theme
         "thang-nm.flow-icons", // Flow icon theme
         
-        "esbenp.prettier-vscode", // Prettier for code formatting
         "github.vscode-github-actions", // Extension for GitHub Actions
         "donjayamanne.githistory", // Git History extension
-        "ivanhofer.git-assistant", // Git Submodules extension
-        "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
-        "wayou.vscode-todo-highlight" // Highlights TODO comments
+        "wayou.vscode-todo-highlight", // Highlights TODO comments
+        "spmeesseman.vscode-taskexplorer" // Task Explorer for VS Code
       ],
       // Default settings for VS Code in this environment
       "settings": {
