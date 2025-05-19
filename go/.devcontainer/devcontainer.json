@@ -1,16 +1,16 @@
 // Name of the development environment (displayed in VS Code and Codespaces)
 {
   "name": "Go Monorepo",
-
   // Base Docker image used for the development environment
   "image": "mcr.microsoft.com/devcontainers/go",
-
   // Additional features to include in the container via Dev Containers
   "features": {
     // Installs common utilities like curl, wget, and git and update machine
-    "ghcr.io/devcontainers/features/common-utils:latest": {}
+    "ghcr.io/devcontainers/features/common-utils": {},
+    "ghcr.io/supergeoff/features/go-packages": {
+      "packages": "github.com/magefile/mage,github.com/air-verse/air,github.com/golangci/golangci-lint/v2"
+    }
   },
-
   // Tool and extension-specific customizations
   "customizations": {
     // VS Code-specific configuration
@@ -19,13 +19,10 @@
       "extensions": [
         "tinaciousdesign.theme-tinaciousdesign", // Tinacious color theme
         "thang-nm.flow-icons", // Flow icon theme
-        
         "github.vscode-github-actions", // Extension for GitHub Actions
         "donjayamanne.githistory", // Git History extension
-
         "wayou.vscode-todo-highlight", // Highlights TODO comments
         "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
-
         "golang.go", // Go language support
         "premparihar.gotestexplorer", // Go test explorer
         "jinliming2.vscode-go-template" // Go Template support
@@ -74,7 +71,7 @@
             "sideBarSectionHeader.background": "#e9eaeb",
             "sideBarSectionHeader.border": "#dedfe0",
             "titleBar.activeBackground": "#f3f4f5",
-            "scrollbarSlider.background":"#3e3e3e3e",
+            "scrollbarSlider.background": "#3e3e3e3e",
           },
         },
         "editor.tokenColorCustomizations": {
