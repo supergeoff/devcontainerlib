@@ -24,7 +24,7 @@
         "aaron-bond.better-comments", // Better comments
         "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
         "christian-kohler.path-intellisense", // Path intellisense
-
+        //
         "golang.go", // Go language support
         "premparihar.gotestexplorer", // Go test explorer
         "jinliming2.vscode-go-template" // Go Template support
