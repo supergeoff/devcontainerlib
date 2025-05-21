@@ -22,8 +22,9 @@
         
         "github.vscode-github-actions", // Extension for GitHub Actions
         "donjayamanne.githistory", // Git History extension
-        "wayou.vscode-todo-highlight", // Highlights TODO comments
-        "spmeesseman.vscode-taskexplorer" // Task Explorer for VS Code
+        "aaron-bond.better-comments", // Better comments
+        "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
+        "christian-kohler.path-intellisense" // Path intellisense
       ],
       // Default settings for VS Code in this environment
       "settings": {

@@ -18,9 +18,11 @@
         "thang-nm.flow-icons", // Flow icon theme
         // Overall
         "donjayamanne.githistory", // Git History extension
-        "wayou.vscode-todo-highlight", // Highlights TODO comments
-        // Specific
-        "mads-hartmann.bash-ide-vscode", // Bash auto-completion
+        "aaron-bond.better-comments", // Better comments
+        "spmeesseman.vscode-taskexplorer", // Task Explorer for VS Code
+        "christian-kohler.path-intellisense", // Path intellisense
+
+        "mads-hartmann.bash-ide-vscode",   // Bash auto-completion
         "ms-vscode-remote.remote-containers", // Remote containers
         "ms-python.python", // Python
         "ms-python.vscode-pylance", // Pylance
