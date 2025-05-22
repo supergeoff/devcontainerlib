@@ -538,5 +538,5 @@
       }
     }
   },
-  "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log && curl -fsSL https://gist.githubusercontent.com/supergeoff/0beee31eb794c5ef9780a7a143d2ccda/raw/6ae11bf488e6e55092343fa91cbe74df46e56334/.zshrc.sh -o ~/.zshrc.tmp && mv ~/.zshrc.tmp ~/.zshrc"
+  "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log && curl -fsSL https://gist.githubusercontent.com/supergeoff/0beee31eb794c5ef9780a7a143d2ccda/raw/67312ae6195477f6719155d0fb8abf5bd29e5bd3/.zshrc.sh -o ~/.zshrc.tmp && mv ~/.zshrc.tmp ~/.zshrc"
 }
