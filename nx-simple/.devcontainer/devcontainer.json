@@ -9,9 +9,6 @@
   "features": {
     // Installs common utilities like curl, wget, and git and update machine
     "ghcr.io/devcontainers/features/common-utils:latest": {},
-    "ghcr.io/devcontainers-extra/features/zsh-plugins":{
-      "plugins": "git alias-finder common-aliases debian ubuntu vscode go npm python"
-    },
     // Installs the PNPM package manager globally
     "ghcr.io/devcontainers-extra/features/npm-packages:latest": {
       "packages": "nx"

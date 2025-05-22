@@ -9,9 +9,6 @@
   "features": {
     // Installs common utilities like curl, wget, and git and update machine
     "ghcr.io/devcontainers/features/common-utils:latest": {},
-    "ghcr.io/devcontainers-extra/features/zsh-plugins":{
-      "plugins": "git alias-finder common-aliases debian ubuntu vscode go npm python"
-    },
     // Allows running Docker inside the container (Docker-in-Docker)
     "ghcr.io/devcontainers/features/docker-in-docker:latest": {},
     // Installs the PNPM package manager globally

@@ -8,10 +8,7 @@
   // Additional features to include in the container via Dev Containers
   "features": {
     // Installs common utilities like curl, wget, and git and update machine
-    "ghcr.io/devcontainers/features/common-utils:latest": {},
-    "ghcr.io/devcontainers-extra/features/zsh-plugins":{
-      "plugins": "git alias-finder common-aliases debian ubuntu vscode go npm python"
-    }
+    "ghcr.io/devcontainers/features/common-utils:latest": {}
   },
 
   // Tool and extension-specific customizations
