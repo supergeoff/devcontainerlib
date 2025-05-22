@@ -538,5 +538,5 @@
       }
     }
   },
-  "postCreateCommand": "curl -fsSL https://gist.githubusercontent.com/supergeoff/0beee31eb794c5ef9780a7a143d2ccda/raw/ef9f743592971d5fe7dd98dacebffe21091dcf50/gistfile1.txt -o ~/.zshrc.tmp && mv ~/.zshrc.tmp ~/.zshrc"
+  "postCreateCommand": "curl -fsSL https://gist.githubusercontent.com/supergeoff/0beee31eb794c5ef9780a7a143d2ccda/raw/6ae11bf488e6e55092343fa91cbe74df46e56334/.zshrc.sh -o ~/.zshrc.tmp && mv ~/.zshrc.tmp ~/.zshrc"
 }
