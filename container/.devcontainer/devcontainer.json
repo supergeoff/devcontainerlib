@@ -6,7 +6,10 @@
   // Definition of features to install
   "features": {
     // Installs common utilities like curl, wget, and git and update machine
-    "ghcr.io/devcontainers/features/common-utils:latest": {}
+    "ghcr.io/devcontainers/features/common-utils:latest": {},
+    "ghcr.io/devcontainers-extra/features/zsh-plugins":{
+      "plugins": "git alias-finder common-aliases debian ubuntu vscode go npm python"
+    }
   },
   // VS Code environment customization
   "customizations": {
@@ -535,5 +538,5 @@
       }
     }
   },
-  "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
+  "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log && curl -fsSL https://gist.githubusercontent.com/supergeoff/0beee31eb794c5ef9780a7a143d2ccda/raw/ef9f743592971d5fe7dd98dacebffe21091dcf50/gistfile1.txt -o ~/.zshrc.tmp && mv ~/.zshrc.tmp ~/.zshrc"
 }

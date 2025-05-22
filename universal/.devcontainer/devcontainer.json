@@ -8,7 +8,10 @@
   // Additional features to include in the container via Dev Containers
   "features": {
     // Installs common utilities like curl, wget, and git and update machine
-    "ghcr.io/devcontainers/features/common-utils:latest": {}
+    "ghcr.io/devcontainers/features/common-utils:latest": {},
+    "ghcr.io/devcontainers-extra/features/zsh-plugins":{
+      "plugins": "git alias-finder common-aliases debian ubuntu vscode go npm python"
+    }
   },
 
   // Tool and extension-specific customizations
@@ -532,5 +535,6 @@
         }
       }
     }
-  }
+  },
+  "postCreateCommand": "curl -fsSL https://gist.githubusercontent.com/supergeoff/0beee31eb794c5ef9780a7a143d2ccda/raw/ef9f743592971d5fe7dd98dacebffe21091dcf50/gistfile1.txt -o ~/.zshrc.tmp && mv ~/.zshrc.tmp ~/.zshrc"
 }

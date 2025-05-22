@@ -7,6 +7,9 @@
   "features": {
     // Installs common utilities like curl, wget, and git and update machine
     "ghcr.io/devcontainers/features/common-utils": {},
+    "ghcr.io/devcontainers-extra/features/zsh-plugins":{
+      "plugins": "git alias-finder common-aliases debian ubuntu vscode go npm python"
+    },
     "ghcr.io/supergeoff/features/go-packages": {
       "packages": "github.com/magefile/mage,github.com/air-verse/air,github.com/golangci/golangci-lint/v2,github.com/a-h/templ/cmd/templ"
     }
@@ -534,5 +537,6 @@
         }
       }
     }
-  }
+  },
+  "postCreateCommand": "curl -fsSL https://gist.githubusercontent.com/supergeoff/0beee31eb794c5ef9780a7a143d2ccda/raw/ef9f743592971d5fe7dd98dacebffe21091dcf50/gistfile1.txt -o ~/.zshrc.tmp && mv ~/.zshrc.tmp ~/.zshrc"
 }
