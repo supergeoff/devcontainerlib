@@ -559,7 +559,7 @@
   "remoteUser": "node",
 
   // Post-creation or post-start commands (none defined for now)
-  "postCreateCommand": "curl -fsSL https://gist.githubusercontent.com/supergeoff/0beee31eb794c5ef9780a7a143d2ccda/raw/67312ae6195477f6719155d0fb8abf5bd29e5bd3/.zshrc.sh -o ~/.zshrc.tmp && mv ~/.zshrc.tmp ~/.zshrc"
+  "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
   // Automatically moves memory-bank.md to the user's Rules folder on container startup
   // "postStartCommand": No command defined after startup
 }
