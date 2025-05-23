@@ -26,7 +26,6 @@
         "christian-kohler.path-intellisense", // Path intellisense
         //
         "golang.go", // Go language support
-        "premparihar.gotestexplorer", // Go test explorer
         "jinliming2.vscode-go-template" // Go Template support
       ],
       // Default settings for VS Code in this environment
